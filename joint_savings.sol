@@ -25,7 +25,7 @@ contract JointSavings {
     - Two variables of type `address payable` named `accountOne` and `accountTwo`
     - A variable of type `address public` named `lastToWithdraw`
     - Two variables of type `uint public` named `lastWithdrawAmount` and `contractBalance`.
-    */   
+    */
     address payable accountOne;
     address payable accountTwo;
     address public lastToWithdraw;
@@ -72,20 +72,22 @@ contract JointSavings {
         /*
         Call the `contractBalance` variable and set it equal to the balance of the contract by using `address(this).balance`.
         */
-        // YOUR CODE HERE!
+        contractBalance = address(this).balance;
     }
 
     /*
-    Define a `public` function named `setAccounts` that receive two `address payable` arguments named `account1` and `account2`.
+    Define a `public` function named `setAccounts` that receives two `address payable` arguments named `account1` and `account2`.
     */
     function setAccounts(address payable account1, address payable account2) public{
 
         // Set the values of `accountOne` and `accountTwo` to `account1` and `account2` respectively.
-        // YOUR CODE HERE!
+        accountOne = account1;
+        accountTwo = account2;
     }
 
     /*
     Finally, add the **default fallback function** so that your contract can store Ether sent from outside the deposit function.
     */
-    // YOUR CODE HERE!
+    function() external payable {
+    }
 }
