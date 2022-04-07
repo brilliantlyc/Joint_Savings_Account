@@ -63,7 +63,7 @@ contract JointSavings {
         lastWithdrawAmount = amount;
 
         // Call the `contractBalance` variable and set it equal to the balance of the contract by using `address(this).balance` to reflect the new balance of the contract.
-        contractBalance = address(this).balance - amount;
+        contractBalance = address(this).balance;
     }
 
     // Define a `public payable` function named `deposit`.
