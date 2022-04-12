@@ -19,7 +19,7 @@ The following screenshot shows the terminal details of successfully executing th
 
 **Deposit:**
 
-The "deposit" function allows the user to deposit ether into the contract by entering an amount in an ether denomination, into the "VALUE" textbox and clicking the "deposit" button. The following screenshot shows the terminal execution results of depositing 5 ether (5000000000000000000 wei).
+The "deposit" function allows the user to deposit ether into the contract by entering an amount in an ether denomination, into the "VALUE" textbox of the Remix IDE's "Deploy and Run" module, and clicking the "deposit" button. The following screenshot shows the terminal execution results of depositing 5 ether (5000000000000000000 wei).
 
 ![DepositTransaction3_Terminal](Execution_Results/DepositTransaction3_Terminal.png)
 
