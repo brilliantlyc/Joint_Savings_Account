@@ -19,17 +19,17 @@ The following screenshot shows the terminal details of successfully executing th
 
 **Deposit:**
 
-The "deposit" function allows the user to deposit ether into the contract by entering an amount in an ether denomination, into the "VALUE" textbox and clicking the "deposit" button. The following screenshot shows the terminal execution results of depositing 1 ether as wei (1000000000000000000 wei).
+The "deposit" function allows the user to deposit ether into the contract by entering an amount in an ether denomination, into the "VALUE" textbox and clicking the "deposit" button. The following screenshot shows the terminal execution results of depositing 5 ether (5000000000000000000 wei).
 
-![DepositTransaction1_Terminal](Execution_Results/DepositTransaction1_Terminal.png)
+![DepositTransaction3_Terminal](Execution_Results/DepositTransaction3_Terminal.png)
 
 To confirm that the amount was deposited into the contract, the user can click the "contractBalance" button to display the contract's updated balance in wei, as is shown below.
 
-![DepositTransaction1_ContractBalance](Execution_Results/DepositTransaction1_ContractBalance.png)
+![DepositTransaction3_ContractBalance](Execution_Results/DepositTransaction3_ContractBalance.png)
 
 **Withdraw:**
 
-The "withdraw" function allows the user to withdraw funds into one of the joint account addresses (account1 or account2) that were set in the "setAccounts" function. The user can enter the funds (in wei) into the "amount" textbox, and the account address into the "recipient" textbox. The following screenshot shows the terminal execution results of withdrawing 5 ether as wei (5000000000000000000 wei).
+The "withdraw" function allows the user to withdraw funds into one of the joint account addresses (account1 or account2) that were set in the "setAccounts" function. The user can enter the funds (in wei) into the "amount" textbox, and the account address into the "recipient" textbox. The following screenshot shows the terminal execution results of withdrawing 5 ether as wei (5000000000000000000 wei) into account1.
 
 ![WithdrawAccountOne_Terminal](Execution_Results/WithdrawAccountOne_Terminal.png)
 
