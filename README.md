@@ -1,5 +1,5 @@
 # Joint Savings Account
-This Solidity smart contract hosts joint savings accounts using ether management functions in order to provide the features of the accounts. More specifically, it accepts two account addresses that are able to control the joint savings account by depositing or withdrawing funds from the account.
+This Solidity smart contract hosts joint savings accounts using ether management functions that provide the features of the accounts. More specifically, it accepts two account addresses that are able to control the joint savings account by depositing or withdrawing funds from the account.
 
 ## Technologies
 The technology required to use this project is the Remix IDE, which is a local blockchain development environment that provides a JavaScript VM. 
@@ -9,27 +9,35 @@ Upon deploying the smart contract, the users are presented with three functions:
 
 **Set Accounts:**
 
-The "setAccounts" function allows the user to enter two account addresses: "account1" and "account2". Once two valid addresses are entered, and the user clicks the "transact" button, the addresses are set as the only addresses that can withdraw from the joint savings account smart contract. 
+The "setAccounts" function allows the user to enter two account addresses: "account1" and "account2". Once two valid addresses are entered, and the user clicks the "transact" button, the addresses are set as the only addresses that can withdraw from the joint savings account contract. 
 
 ![SetAccounts](Execution_Results/SetAccounts.png)
 
-The following screenshot shows the details of successfully executing the "setAccounts" function.
+The following screenshot shows the terminal details of successfully executing the "setAccounts" function.
 
 ![SetAccounts_Terminal](Execution_Results/SetAccounts_Terminal.png)
 
 **Deposit:**
 
-
+The "deposit" function allows the user to deposit ether into the contract by entering an amount in an ether denomination, into the "VALUE" textbox and clicking the "deposit" button. The following screenshot shows the terminal execution results of depositing 1 ether as wei (1000000000000000000 wei).
 
 ![DepositTransaction1_Terminal](Execution_Results/DepositTransaction1_Terminal.png)
+
+To confirm that the amount was deposited into the contract, the user can click the "contractBalance" button to display the contract's updated balance in wei, as is shown below.
 
 ![DepositTransaction1_ContractBalance](Execution_Results/DepositTransaction1_ContractBalance.png)
 
 **Withdraw:**
 
+The "withdraw" function allows the user to withdraw funds into one of the joint account addresses (account1 or account2) that were set in the "setAccounts" function. The user can enter the funds (in wei) into the "amount" textbox, and the account address into the "recipient" textbox. The following screenshot shows the terminal execution results of withdrawing 5 ether as wei (5000000000000000000 wei).
+
 ![WithdrawAccountOne_Terminal](Execution_Results/WithdrawAccountOne_Terminal.png)
 
+To verify that the funds were withdrawn from the contract, the user can click the "contractBalance" button to display the contract's updated balance in wei, as is shown below.
+
 ![WithdrawAccountOne_ContractBalance](Execution_Results/WithdrawAccountOne_ContractBalance.png)
+
+Furthermore, to confirm that the address and amount withdrawn from the contract were correct, the user can click the "lastToWithdraw" and "lastWithdrawAmount" buttons, as can be seen in the following screenshots.
 
 ![WithdrawAccountOne_LastToWithdraw](Execution_Results/WithdrawAccountOne_LastToWithdraw.png)
 
